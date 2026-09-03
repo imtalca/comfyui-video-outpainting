@@ -10,9 +10,9 @@ Instead of scrapping the vision, we kept the lighting as consistent as possible 
 
 I built an automated workflow in ComfyUI to "outpaint" the edges of the raw shots. By taking the real footage and isolating the subject, the AI dynamically generated and expanded the surrounding room, turning four tight walls into a massive hangar.
 
-vda-workflow.jpg
+![alt text](image.png)
 
 ## The Result
 The final footage did not look like a cheap filter—the outpainting seamlessly matched the lighting and depth of the real environment. AI is arguably the best backup plan a director can have; it turned a technical glitch into some of the most striking visuals I have ever directed.
 
-[![Watch on YouTube](https://youtu.be/AuIMKu8HHaM?si=3Fz119SW4fzIp7Zj)](https://lnkd.in/e3xthSS8)
+[![Watch on YouTube](https://img.youtube.com/vi/AuIMKu8HHaM/0.jpg)](https://youtu.be/AuIMKu8HHaM)

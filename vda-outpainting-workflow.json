@@ -1,0 +1,339 @@
+{
+  "id": "489a83b6-6933-4f76-9556-0a31b8ded740",
+  "revision": 0,
+  "last_node_id": 22,
+  "last_link_id": 21,
+  "nodes": [
+    {
+      "id": 12,
+      "type": "KlingOmniProVideoToVideoNode",
+      "pos": [
+        -579.6018266620182,
+        256.4454752862668
+      ],
+      "size": [
+        333.328125,
+        333.640625
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "reference_video",
+          "type": "VIDEO",
+          "link": 12
+        },
+        {
+          "name": "reference_images",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 19
+        }
+      ],
+      "outputs": [
+        {
+          "name": "VIDEO",
+          "type": "VIDEO",
+          "links": [
+            15
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "KlingOmniProVideoToVideoNode"
+      },
+      "widgets_values": [
+        "kling-v3-omni",
+        "A cinematic wide shot from a moderately long distance. The subject - me in a white dress from the source video, centered within a massive circle, empty black space hall. ethereal and slightly mysterious lighting. The framing emphasizes immense spatial depth and scale, making the environment feel vast while maintaining focus on me laying in the embryon pose in the centre, on top of a pile of salt, puddle of water around me in a circular shape. High-contrast lighting highlights  the misty ominous atmosphere. Camera slowly moves away from me.",
+        "16:9",
+        10,
+        false,
+        "1080p",
+        474753847,
+        "fixed"
+      ],
+      "widgets_values_named": {
+        "model_name": "kling-v3-omni",
+        "prompt": "A cinematic wide shot from a moderately long distance. The subject - me in a white dress from the source video, centered within a massive circle, empty black space hall. ethereal and slightly mysterious lighting. The framing emphasizes immense spatial depth and scale, making the environment feel vast while maintaining focus on me laying in the embryon pose in the centre, on top of a pile of salt, puddle of water around me in a circular shape. High-contrast lighting highlights  the misty ominous atmosphere. Camera slowly moves away from me.",
+        "aspect_ratio": "16:9",
+        "duration": 10,
+        "keep_original_sound": false,
+        "resolution": "1080p",
+        "seed": 474753847,
+        "control_after_generate": "fixed"
+      },
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 14,
+      "type": "LoadVideo",
+      "pos": [
+        -867.9108634140948,
+        74.59836387466854
+      ],
+      "size": [
+        235.640625,
+        302
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "VIDEO",
+          "type": "VIDEO",
+          "links": [
+            12
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadVideo"
+      },
+      "widgets_values": [
+        "782c28a00dcab616269630b321f43c0f660b5d0dd4bdb4f379b23c2cf85daabc.mp4",
+        "image"
+      ],
+      "widgets_values_named": {
+        "file": "782c28a00dcab616269630b321f43c0f660b5d0dd4bdb4f379b23c2cf85daabc.mp4",
+        "upload": "image"
+      }
+    },
+    {
+      "id": 15,
+      "type": "LoadImage",
+      "pos": [
+        -772.9456424187193,
+        632.4144738628013
+      ],
+      "size": [
+        235.640625,
+        322
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            20
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "c2fee8ae68389319a75434d43ae2d9a6df45644609d9c878ed10c4a1eb1cebae.jpg",
+        "image"
+      ],
+      "widgets_values_named": {
+        "image": "c2fee8ae68389319a75434d43ae2d9a6df45644609d9c878ed10c4a1eb1cebae.jpg",
+        "upload": "image"
+      }
+    },
+    {
+      "id": 17,
+      "type": "SaveVideo",
+      "pos": [
+        -140.13000517572704,
+        398.5422239877392
+      ],
+      "size": [
+        225,
+        153.984375
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "video",
+          "type": "VIDEO",
+          "link": 15
+        }
+      ],
+      "outputs": [
+        {
+          "name": "video",
+          "type": "VIDEO",
+          "links": null
+        }
+      ],
+      "properties": {},
+      "widgets_values": [
+        "vdasanddraft",
+        "mp4",
+        "h264",
+        "auto",
+        "auto"
+      ],
+      "widgets_values_named": {
+        "filename_prefix": "vdasanddraft",
+        "format": "mp4",
+        "format.codec": "h264",
+        "format.codec.encoding": "auto",
+        "codec": "auto"
+      }
+    },
+    {
+      "id": 20,
+      "type": "BatchImagesNode",
+      "pos": [
+        -1115.8690469199391,
+        565.5514748678817
+      ],
+      "size": [
+        225,
+        79.65625
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "image0",
+          "name": "images.image0",
+          "type": "IMAGE",
+          "link": 20
+        },
+        {
+          "name": "images.image1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 21
+        },
+        {
+          "name": "images.image2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            19
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BatchImagesNode"
+      }
+    },
+    {
+      "id": 22,
+      "type": "LoadImage",
+      "pos": [
+        -1274.5126310936355,
+        759.272726902412
+      ],
+      "size": [
+        235.640625,
+        322
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            21
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "6157a9d508f5bce2f3451d9c3b025f0e3f7d289f17a76bc24120cdcf4d641fc5.PNG",
+        "image"
+      ],
+      "widgets_values_named": {
+        "image": "6157a9d508f5bce2f3451d9c3b025f0e3f7d289f17a76bc24120cdcf4d641fc5.PNG",
+        "upload": "image"
+      }
+    }
+  ],
+  "links": [
+    [
+      12,
+      14,
+      0,
+      12,
+      0,
+      "VIDEO"
+    ],
+    [
+      15,
+      12,
+      0,
+      17,
+      0,
+      "VIDEO"
+    ],
+    [
+      19,
+      20,
+      0,
+      12,
+      1,
+      "IMAGE"
+    ],
+    [
+      20,
+      15,
+      0,
+      20,
+      0,
+      "IMAGE"
+    ],
+    [
+      21,
+      22,
+      0,
+      20,
+      1,
+      "IMAGE"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.5709060259964669,
+      "offset": [
+        2048.7980664016854,
+        44.269028905318535
+      ]
+    },
+    "workflowRendererVersion": "Vue-corrected",
+    "frontendVersion": "1.52.5",
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true
+  },
+  "version": 0.4
+}

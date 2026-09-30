@@ -1,6 +1,6 @@
 # AI Outpainting for Video Production (ComfyUI)
 
-When a massive hangar location fell through 24 hours before the music video shoot for my song "VODA", we were forced to film in a small garage. This repository demonstrates how I used a custom **ComfyUI** generative AI workflow to save the production and mathematically expand the physical constraints of our set.
+When a massive hangar location fell through 24 hours before the music video shoot for my song "VDA", we were forced to film in a small garage. This repository demonstrates how I used a custom **ComfyUI** generative AI workflow to save the production and mathematically expand the physical constraints of our set.
 
 ## The Problem
 All the wide, cinematic shots planned for the video were physically impossible. We had to film the artist in a tightly confined garage while maintaining the illusion of a vast, industrial space.
